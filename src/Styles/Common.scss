@@ -1,0 +1,152 @@
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css");
+@import "./Reset.scss";
+
+$high-yellow: #ffd014;
+$bg-gray: #f6f6f6;
+$font-black: #000;
+$font-gray: #656565;
+$font-purple: #6d3afb;
+$border-gray: 1px solid #ebebeb;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+html {
+  font-size: 10px;
+
+  body {
+    font-family: "NanumBarunGothic", sans-serif;
+
+    .btn_com {
+      background: url(https://www.spacecloud.kr/_nuxt/img/08341ee.png) no-repeat;
+    }
+
+    .btn_search {
+      width: 30px;
+      height: 30px;
+      background-size: 684px 663px;
+      background-position: -637px -156px;
+      text-indent: -9999px;
+    }
+
+    .btn_menu {
+      width: 28px;
+      height: 22px;
+      background-size: 684px 663px;
+      background-position: -637px -540px;
+      text-indent: -9999px;
+    }
+
+    .alert_box {
+      position: fixed;
+      top: -100px;
+      left: 0;
+      z-index: 6;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      color: #fff;
+      font-size: 2.4rem;
+      background-color: $font-purple;
+      transition: transform 0.3s ease-in-out;
+
+      &.show {
+        transform: translateY(100px);
+      }
+    }
+
+    //Login & SignUp common box
+    .common_wrap {
+      text-align: center;
+      margin: 0 0 50px 0;
+
+      h2 {
+        padding: 120px 0 50px 0;
+        text-align: center;
+        font-size: 3.4rem;
+      }
+
+      .common_box {
+        width: 648px;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: #fff;
+        font-size: 1.6rem;
+
+        .or {
+          position: relative;
+          height: 20px;
+          margin: 16px 0 0;
+          text-align: center;
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            padding: 0 15px;
+            background-color: #fff;
+            font-size: 1.4rem;
+          }
+
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $bg-gray;
+          }
+        }
+
+        form {
+          font-size: 1.2rem;
+
+          input {
+            width: 100%;
+            height: 48px;
+            padding: 0 10px;
+            margin: 16px 0 0;
+            line-height: 48px;
+            border: solid 1px #ccc;
+
+            &:focus {
+              border: solid 1px #ffd014;
+            }
+
+            &.error {
+              border: solid 1px #ff3a48;
+            }
+          }
+        }
+
+        .validation_message {
+          padding: 6px 0 0;
+          color: #ff3a48;
+          text-align: left;
+        }
+
+        .btn_submit {
+          width: 100%;
+          height: 48px;
+          margin: 24px 0 0;
+          line-height: 48px;
+          background-color: $high-yellow;
+        }
+      }
+    }
+  }
+}

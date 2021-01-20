@@ -1,0 +1,22 @@
+@import "../../Styles/Common.scss";
+
+.SocialLogin {
+    width: 100%;
+    overflow: hidden;
+
+    li {
+      position: relative;
+      height: 45px;
+      margin-bottom: 16px;
+      line-height: 45px;
+      color: #000;
+      border: solid 1px #000;
+      border-radius: 5px;
+
+      i {
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+      }
+    }
+  }

@@ -1,0 +1,181 @@
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css");
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+article,
+aside,
+footer,
+header,
+Header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+}
+
+article,
+footer,
+header,
+Header,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+}
+html body {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+html body .btn_com {
+  background: url(https://www.spacecloud.kr/_nuxt/img/08341ee.png) no-repeat;
+}
+html body .btn_search {
+  width: 30px;
+  height: 30px;
+  background-size: 684px 663px;
+  background-position: -637px -156px;
+  text-indent: -9999px;
+}
+html body .btn_menu {
+  width: 28px;
+  height: 22px;
+  background-size: 684px 663px;
+  background-position: -637px -540px;
+  text-indent: -9999px;
+}
+html body .alert_box {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 2.4rem;
+  background-color: #6d3afb;
+  transition: transform 0.3s ease-in-out;
+}
+html body .alert_box.show {
+  transform: translateY(100px);
+}
+html body .common_wrap {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+html body .common_wrap h2 {
+  padding: 120px 0 50px 0;
+  text-align: center;
+  font-size: 3.4rem;
+}
+html body .common_wrap .common_box {
+  width: 648px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+html body .common_wrap .common_box .or {
+  position: relative;
+  height: 20px;
+  margin: 16px 0 0;
+  text-align: center;
+}
+html body .common_wrap .common_box .or span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 0 15px;
+  background-color: #fff;
+  font-size: 1.4rem;
+}
+html body .common_wrap .common_box .or:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f6f6f6;
+}
+html body .common_wrap .common_box form {
+  font-size: 1.2rem;
+}
+html body .common_wrap .common_box form input {
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  margin: 16px 0 0;
+  line-height: 48px;
+  border: solid 1px #ccc;
+}
+html body .common_wrap .common_box form input:focus {
+  border: solid 1px #ffd014;
+}
+html body .common_wrap .common_box form input.error {
+  border: solid 1px #ff3a48;
+}
+html body .common_wrap .common_box .validation_message {
+  padding: 6px 0 0;
+  color: #ff3a48;
+  text-align: left;
+}
+html body .common_wrap .common_box .btn_submit {
+  width: 100%;
+  height: 48px;
+  margin: 24px 0 0;
+  line-height: 48px;
+  background-color: #ffd014;
+}
